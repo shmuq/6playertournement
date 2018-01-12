@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Six Players tournament</title>
+	<script type="text/javascript" src="javaScript/script.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div id="tables">
+		<table id="playerAss">
+			<tr>
+				<th>Player Number</th>
+				<th>Player Name</th>
+				<th>Player Team</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td><input class="playerOne" type="text" name="playerName" value="Player One"></td>
+				<td><input class="playerOne" type="text" name="playerTeam" value="Team"></td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td><input class="playerTwo" type="text" name="playerName" value="Player Two"></td>
+				<td><input class="playerTwo" type="text" name="playerTeam" value="Team"></td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td><input class="playerThree" type="text" name="playerName" value="Player Three"></td>
+				<td><input class="playerThree" type="text" name="playerTeam" value="Team"></td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td><input class="playerFour" type="text" name="playerName" value="Player Four"></td>
+				<td><input class="playerFour" type="text" name="playerTeam" value="Team"></td>
+			</tr>
+			<tr>
+				<td>5</td>
+				<td><input class="playerFive" type="text" name="playerName" value="Player Five"></td>
+				<td><input class="playerFive" type="text" name="playerTeam" value="Team"></td>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td><input class="playerSix" type="text" name="playerName" value="Player Six"></td>
+				<td><input class="playerSix" type="text" name="playerTeam" value="Team"></td>
+			</tr>
+		</table>
+		<button id="assName" onclick="inti();">ENROLL</button>
+		<table id="groupA">
+			<tr>
+				<th>Group A</th>
+			</tr>
+			<tr>
+				<th>Number</th>
+				<th>Player</th>
+				<th>Played</th>
+				<th>Win</th>
+				<th>tie</th>
+				<th>lose</th>
+				<th>GF</th>
+				<th>GA</th>
+				<th>GD</th>
+				<th>Pt.</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td class="GA1">-</td>
+				<td class="GA1">-</td>
+				<td class="GA1">-</td>
+				<td class="GA1">-</td>
+				<td class="GA1">-</td>
+				<td class="GA1">-</td>
+				<td class="GA1">-</td>
+				<td class="GA1">-</td>
+				<td class="GA1">-</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td class="GA2">-</td>
+				<td class="GA2">-</td>
+				<td class="GA2">-</td>
+				<td class="GA2">-</td>
+				<td class="GA2">-</td>
+				<td class="GA2">-</td>
+				<td class="GA2">-</td>
+				<td class="GA2">-</td>
+				<td class="GA2">-</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td class="GA3">-</td>
+				<td class="GA3">-</td>
+				<td class="GA3">-</td>
+				<td class="GA3">-</td>
+				<td class="GA3">-</td>
+				<td class="GA3">-</td>
+				<td class="GA3">-</td>
+				<td class="GA3">-</td>
+				<td class="GA3">-</td>
+			</tr>
+		</table>
+		<table id="groupB">
+			<tr>
+				<th>Group B</th>
+			</tr>
+			<tr>
+				<th>Number</th>
+				<th>Player</th>
+				<th>Played</th>
+				<th>Win</th>
+				<th>tie</th>
+				<th>lose</th>
+				<th>GF</th>
+				<th>GA</th>
+				<th>GD</th>
+				<th>Pt.</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td class="GB1">-</td>
+				<td class="GB1">-</td>
+				<td class="GB1">-</td>
+				<td class="GB1">-</td>
+				<td class="GB1">-</td>
+				<td class="GB1">-</td>
+				<td class="GB1">-</td>
+				<td class="GB1">-</td>
+				<td class="GB1">-</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td class="GB2">-</td>
+				<td class="GB2">-</td>
+				<td class="GB2">-</td>
+				<td class="GB2">-</td>
+				<td class="GB2">-</td>
+				<td class="GB2">-</td>
+				<td class="GB2">-</td>
+				<td class="GB2">-</td>
+				<td class="GB2">-</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td class="GB3">-</td>
+				<td class="GB3">-</td>
+				<td class="GB3">-</td>
+				<td class="GB3">-</td>
+				<td class="GB3">-</td>
+				<td class="GB3">-</td>
+				<td class="GB3">-</td>
+				<td class="GB3">-</td>
+				<td class="GB3">-</td>
+			</tr>
+		</table>
+		<table id="matchs">
+			<tr>
+				<th>Matchs</th>
+			</tr>
+			<tr>
+				<td class="match1">GA1</td>
+				<td><input class="match1" type="number" name="score" min="0"></td>
+				<td>VS</td>
+				<td><input class="match1" type="number" name="score" min="0"></td>
+				<td class="match1">GA2</td>
+			</tr>
+			<tr>
+				<td class="match2">GB1</td>
+				<td><input class="match2" type="number" name="score" min="0"></td>
+				<td>VS</td>
+				<td><input class="match2" type="number" name="score" min="0"></td>
+				<td class="match2">GB2</td>
+			</tr>
+			<tr>
+				<td class="match3">GA2</td>
+				<td><input class="match3" type="number" name="score" min="0"></td>
+				<td>VS</td>
+				<td><input class="match3" type="number" name="score" min="0"></td>
+				<td class="match3">GA3</td>
+			</tr>
+			<tr>
+				<td class="match4">GB2</td>
+				<td><input class="match4" type="number" name="score" min="0"></td>
+				<td>VS</td>
+				<td><input class="match4" type="number" name="score" min="0"></td>
+				<td class="match4">GB3</td>
+			</tr>
+			<tr>
+				<td class="match5">GA1</td>
+				<td><input class="match5" type="number" name="score" min="0"></td>
+				<td>VS</td>
+				<td><input class="match5" type="number" name="score" min="0"></td>
+				<td class="match5">GA3</td>
+			</tr>
+			<tr>
+				<td class="match6">GB1</td>
+				<td><input class="match6" type="number" name="score" min="0"></td>
+				<td>VS</td>
+				<td><input class="match6" type="number" name="score" min="0"></td>
+				<td class="match6">GB3</td>
+			</tr>
+		</table>
+		<button id="update" onclick="update();">UPDATE</button>
+	</div>
+	<div>
+		
+	</div>
+</body>
+</html>
